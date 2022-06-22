@@ -1,0 +1,21 @@
+﻿@using BurgerApp.Models.Domain
+@model Burger
+
+@{
+
+}
+
+<form asp-controller="Pizza" asp-action="Edit" asp-route-id="@Model.Name" method="post">
+    <label asp-for="Name">
+        <input asp-for="Name" />
+    </label>
+    <label asp-for="Price">
+        <input asp-for="Price" />
+    </label>
+    <label asp-for="Kinds">
+        <input asp-for="Kinds" />
+    </label>
+    <button>
+        Submit
+    </button>
+</form>
